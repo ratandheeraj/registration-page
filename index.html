@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .for-form{
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        body{
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="POST" action="action.php" class="for-form" autocomplete="off">
+        <label for="username">Name:</label>
+        <input type="text" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" name="password" required>
+        <input type="submit">
+        Not a user? <a href="register.html">register here</a>
+    </form>
+    
+</body>
+</html>

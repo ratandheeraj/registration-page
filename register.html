@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            background-color: #f2f2f2;
+        }
+        .for-form{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        input[type=number] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+    </style>
+</head>
+<body>
+    <h1>Student Registration Form:</h1>
+    <div class="for-form">
+        <form autocomplete="off" method="POST" action="register.php">
+            <label for="username">Name:</label>
+            <input type="text" name="username" placeholder="Enter your name">
+            <label for="class">Class:</label>
+            <input type="text" name="class" placeholder="Enter your class">
+            <label for="rollno">Roll no:</label>
+            <input type="number" name="rollno" placeholder="Enter your roll no"><br><br>
+            <label for="gender">Gender:</label><br><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+            <label for="department">Depatment:</label>
+            <select name="department" id="department">
+                <option value="cse" selected>CSE</option>
+                <option value="ece">ECE</option>
+                <option value="it">IT</option>
+                <option value="mech">Mech</option>
+                <option value="eee">EEE</option>
+                <option value="chem">Chem</option>
+            </select>
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="Choose your password">
+            <input type="submit">
+            Already a user? <a href="index.html">Login in</a>
+        </form>
+    </div>
+   
+</body>
+</html>
